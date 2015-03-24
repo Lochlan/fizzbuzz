@@ -1,10 +1,13 @@
+use strict;
+use warnings;
+
 fizzbuzz();
 
 sub fizzbuzz {
-    @output_values;
+    my @output_values;
 
     for my $index (1..100) {
-        $fizz_buzz_string = '';
+        my $fizz_buzz_string = '';
 
         if ($index % 3 == 0) {
             $fizz_buzz_string .= 'Fizz';
